@@ -206,7 +206,7 @@ int main()
     std::cout << "M2" << std::endl << cm2 << std::endl;
     std::cout << "R:" << std::endl << R << std::endl;
 
-
+#if 0
     cv::FileStorage FS;
     // save camera data
     FS.open(intrinsicsfile, cv::FileStorage::WRITE);
@@ -222,6 +222,7 @@ int main()
     FS << "E" << E;
     FS << "F" << F;
     FS.release();
+#endif
 
     return 0;
 }
